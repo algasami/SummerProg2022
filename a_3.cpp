@@ -1,3 +1,18 @@
+/**
+ * Input: A number n, followed by n questions (list of nodes)
+ * Graph:
+ * m -- n -- o -- p
+ * |    |         |
+ * i -- j -- k -- l
+ * |    |    |    |
+ * e -- f    g -- h
+ * |    |    |    |
+ * a -- b -- c -- d
+ * (Please pay attention on the fact that o,k and f,g aren't connected)
+ * Output: The lengths of the most efficient ways to traverse through all the
+ * given nodes in each question, separated by newlines. (Remember that roots are ignored!)
+ */
+
 #include<iostream>
 #include<queue>
 #include<vector>

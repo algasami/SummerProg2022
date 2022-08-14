@@ -1,3 +1,10 @@
+/**
+ * Input:
+ * Multiple lines of numbers // End = 0
+ * Output:
+ * Multiple lines of 'YES' or 'NO' indicating if the corresponding number is a palindrome or not
+ */
+
 #include<iostream>
 #include<vector>
 #include<iterator>

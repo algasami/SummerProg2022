@@ -1,3 +1,11 @@
+/**
+ * Input: A number. The number indicates the width of the chinese chess set (height is a constant 3)
+ * Output:
+ *  1. If there are no ways a horse can traverse through all the coordinates in the chinese chess set,
+ *  output 0.
+ *  2. Otherwise, output the order of the movement in lexicographical order.
+ */
+
 #include<iostream>
 #include<algorithm>
 #include<queue>
@@ -86,6 +94,7 @@ int main(){
     return 0;
   }
   int curans = 0;
+  // Lexicographical Sorting
   for(int y = 0;y<3;y++)
   {
     for(int x=0;x<n;x++)
@@ -93,7 +102,8 @@ int main(){
       int index=-1;
       bool eq = false;
       for(auto& m:show)
-      { index++;
+      {
+        index++;
         if(index == curans) continue;
         if(elim[index] != 0) continue;
         if(m[y][x] < show[curans][y][x])

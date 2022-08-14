@@ -1,3 +1,7 @@
+/**
+ * Input: m,n and m*n 0s and 1s. 1s represent obstacles, followed by four numbers -- person_y, person_x, treasure_y and treasure_x
+ * Output: Shortest path (It's evident that we have to solve this question with bfs lol)
+ */
 #include<iostream>
 #include<algorithm>
 #include<vector>
