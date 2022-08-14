@@ -67,6 +67,13 @@ void bfs(path& p, path& target,queue<path>& reach)
 {
   vec& head = p[p.size()-1];
   if(head.y < 0 || head.x < 0 || head.y >= 4 || head.x >= 4) return;
+  char a = vtc(head), b = vtc(p[p.size()-2]);
+  if(
+      (a == 'o' && b == 'k')||
+      (b == 'o' && a == 'k')||
+      (a == 'f' && b == 'g')||
+      (a == 'g' && b == 'f')
+    )return;
   for(int i=0;i<p.size()-1;i++)
     if(head.y == p[i].y && head.x == p[i].x)return;
   if(overlap(p,target) == true){
