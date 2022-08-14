@@ -1,0 +1,23 @@
+{
+  "configurations": {
+    "Vim Debug C++": {
+      "adapter": "vscode-cpptools",
+      "configuration": {
+        "type":    "cppdbg",
+        "request": "launch",
+        "program": "${workspaceRoot}/a.out",
+        "args": [
+          "-f",
+          "--noplugin"
+        ],
+        "cwd": "${workspaceRoot}",
+        "externalConsole": true,
+        "stopAtEntry": true,
+        "MIMode": "gdb",
+        "logging": {
+          "engineLogging": false
+        }
+      }
+    }
+  }
+}
